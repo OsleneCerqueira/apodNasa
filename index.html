@@ -13,23 +13,48 @@
 
 <body>
 
-    <header>
-        
+    <header class="cabecalho">
+        <img class="imagem-logo" src="./IMG/nasa-logo-60-anos.png" alt="">
+        <nav class="menu">
+                <ul class="menu-list">
+                    <li><a class="menu-itens" href="https://apod.nasa.gov/apod/lib/aptree.html">Index</a></li>
+                    <li><a class="menu-itens" href="https://apod.nasa.gov/apod/lib/about_apod.html">About APOD</a></li>
+                    <li><a class="menu-itens" href="https://www.nasa.gov/">NASA</a></li>
+                </ul>
+        </nav>
     </header>
-    <h2>Astronomy Picture of the day</h2>
-    <section>
-        <input type="date" id="data">
-    <button id="enviar">pesquisar</button>
-    </section>
-    
-    <section>
-        <h3 class="img-titilo" id="titulo"></h3>
-    <em class="data" id="descricao_data"></em>
-    <img src="" alt="" id="apod_img" class="img-apod">
-    <p class="texto" id="texto"></p>
-    </section>
-    <footer>
+    <main class="container">
+        <h1 class="titulo">Astronomy Picture of the day</h1>
         
+        
+        <section class="pesquisa">
+            <input type="date" id="data">
+            <button id="enviar">Pesquisar</button>  
+        </section>
+        
+        <section class="resposta">
+        <h3 class="img-titulo font" id="titulo"></h3>
+
+    <p class="data font" id="descricao_data"></p>
+    
+    <section id="imagens-apod"></section>
+
+
+    <p class="texto font" id="texto"></p>
+
+    </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="item1 font"> Desenvolvido by Oslene Cerqueira</div>
+
+        <div class="item2">
+            <a href="https://github.com/OsleneCerqueira"><img src="./IMG/log-gitHub.png" alt="logo github"></a>
+
+            <a href="https://www.linkedin.com/in/oslene-cerqueira-a35478232/"><img src="./IMG/logo-linkedin.png" alt="logo linkedin"></a>
+
+            
+        </div>
     </footer>
 </body>
 

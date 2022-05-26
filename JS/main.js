@@ -9,13 +9,14 @@ $("#enviar").on("click", function () {
             $("#titulo")
                 .html(data.title);
 
-            // $("#apod_pic")
-            //     .src = data.url;
-            $("#apod_img").attr('src', data.url);
-
             $("#texto")
                 .html(data.explanation);
-            // return data;
+            
+                if (data.media_type == 'image') {
+                    $("#imagens-apod").html(`<img class="img-apod" src="${data.url}"/>`)
+                } else {
+                    $("#imagens-apod").html(`<iframe class="img-apod" src="${data.url}"></iframe>`)
+                }
         }
     })
 })
