@@ -62,7 +62,7 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.titulo{
+.titulo,.img-titulo{
     background-image: url(../IMG/imagem2.jpg);
     background-clip: text;
     -webkit-background-clip: text;
@@ -71,6 +71,10 @@ body{
     text-align: center;
     width:100%;
     font-family: 'Courgette', cursive;
+}
+
+.img-titulo{
+    font-size: 1.8rem;
 }
 .pesquisa{
     margin: 20px 50px 20px 50px;
@@ -92,7 +96,6 @@ body{
     align-items: center;
     text-align: center;
     align-content: space-between;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) */
 }
 
 .img-apod{
